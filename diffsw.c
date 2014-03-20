@@ -7,3 +7,20 @@
  *  For details, see the https://github.com/klaNath/programable_switcher.git/LICENSE
  *
  */
+
+#include "diffsw.h"
+
+
+
+
+unsigned char diffsw(unsigned char inputSW){
+
+  unsigned char prevSW, outputSW;
+
+  outputSW = inputSW ^ prevSW;
+
+  prevSW = inputSW;
+
+  return outputSW;
+
+}
