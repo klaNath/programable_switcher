@@ -7,3 +7,6 @@
  *  For details, see the https://github.com/klaNath/programable_switcher.git/LICENSE
  *
  */
+
+
+void initSC1602();

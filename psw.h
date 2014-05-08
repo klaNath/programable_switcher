@@ -7,3 +7,21 @@
  *  For details, see the https://github.com/klaNath/programable_switcher.git/LICENSE
  *
  */
+
+char IfSettingPSW;
+int SysTick;
+int PrevSysTick;
+unsigned char PushedSW;
+unsigned char RanSetting;
+
+
+void incSysTick();
+void initSystem();
+void initPSW();
+
+void PSW(unsigned char);
+void settingPSW(unsigned char);
+
+void loadSetting();
+void updateView();
+void updateLoop();

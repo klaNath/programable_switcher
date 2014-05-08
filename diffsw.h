@@ -9,4 +9,4 @@
  */
 
 
-unsigned char diffsw(unsigned char)
+unsigned char diffsw(unsigned char);
