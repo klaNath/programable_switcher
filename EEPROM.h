@@ -12,5 +12,7 @@
 #ifndef _EEPROM_H
 #define _EEPROM_H
 
+char eepromRead(unsigned char);
+void eepromWrite(unsigned char, char);
 
 #endif
