@@ -1,6 +1,6 @@
 /*
  *
- *  Programable Switcher For PIC 16F1, PSW-1 Version 0.0.1
+ *  Programable Switcher Firmware For PIC 16F1, PSW-1 Version 0.0.1
  *  (C) 2014 Kazusa Okuda (a.k.a. klaNath)
  *
  *  PSW-1 is freely distributable under the terms of an MIT-style license.
@@ -13,7 +13,7 @@
  *  Include 6 Loop, 5 Preset and 16 SongSet.
  */
 
-
+#define _PIC16F1
 
 #include <xc.h>
 #include "diffsw.h"
