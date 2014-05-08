@@ -8,11 +8,14 @@
  *
  */
 
-char IfSettingPSW;
-int SysTick;
-int PrevSysTick;
-unsigned char PushedSW;
-unsigned char RanSetting;
+#ifndef _PSW_H
+#define _PSW_H
+
+extern char IfSettingPSW;
+extern int SysTick;
+extern int PrevSysTick;
+extern unsigned char PushedSW;
+extern unsigned char RanSetting;
 
 
 void incSysTick();
@@ -26,3 +29,6 @@ void loadSetting();
 void updateView();
 void updateLoop();
 void storeData();
+
+
+#endif

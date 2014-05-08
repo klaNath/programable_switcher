@@ -7,6 +7,9 @@
  *  For details, see the https://github.com/klaNath/programable_switcher.git/LICENSE
  *
  */
-
+#ifndef _SC1602_H
+#define _SC1602_H
 
 void initSC1602();
+
+#endif

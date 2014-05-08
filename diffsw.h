@@ -8,5 +8,9 @@
  *
  */
 
+#ifndef _DIFFSW_H
+#define _DIFFSW_H
 
 unsigned char diffsw(unsigned char);
+
+#endif
