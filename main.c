@@ -68,7 +68,9 @@ void main()
 void PSW(unsigned char SW)
 {
     if(RanSetting == 1) loadSetting();
-    updateView();
-    updateLoop();
-    
+    if(SW !== 0){
+        updateLoop();
+        updateView();
+        storeData();
+    }
 }
