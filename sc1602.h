@@ -10,6 +10,13 @@
 #ifndef _SC1602_H
 #define _SC1602_H
 
+enum SC1602_COMMAND
+{
+
+};
+
 void initSC1602();
+void clearSC1602();
+void sendCommandSC1602();
 
 #endif
