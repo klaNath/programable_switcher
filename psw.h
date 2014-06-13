@@ -27,7 +27,7 @@ void settingPSW(unsigned char);
 
 void loadSetting();
 void updateView();
-void updateLoop();
+void updateLoop(unsigned char);
 void storeData();
 
 

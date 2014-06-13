@@ -12,3 +12,23 @@
 
 #include <xc.h>
 #include "EEPROM.h"
+
+
+
+
+
+
+void PSW(unsigned char SW)
+{
+    if(RanSetting == 1) loadSetting();
+    if(SW !== 0){
+        updateLoop(SW);
+        updateView();
+        storeData();
+    }
+}
+
+void loadSetting()
+{
+
+}

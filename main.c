@@ -20,10 +20,9 @@
 #include "psw.h"
 #include "sc1602.h"
 
-__CONFIG(CLKOUTEN_OFF & FOSC_INTOSC & FCMEN_OFF & IESO_OFF & BOREN_ON & PWRTE_ON
+__CONFIG (CLKOUTEN_OFF & FOSC_INTOSC & FCMEN_OFF & IESO_OFF & BOREN_ON & PWRTE_ON
         & WDTE_OFF & MCLRE_OFF & CP_OFF & CPD_OFF) ;
-__CONFIG(PLLEN_OFF & STVREN_ON & WRT_OFF & BORV_HI & LVP_OFF);
-
+__CONFIG (PLLEN_OFF & STVREN_ON & WRT_OFF & BORV_HI & LVP_OFF);
 
 
 
@@ -65,12 +64,3 @@ void main()
 }
 
 
-void PSW(unsigned char SW)
-{
-    if(RanSetting == 1) loadSetting();
-    if(SW !== 0){
-        updateLoop();
-        updateView();
-        storeData();
-    }
-}
